@@ -1,0 +1,52 @@
+body {
+  background: #E1E1E1;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smiley {
+  height: 350px;
+  width: 350px;
+  background-color: #FFCC4D;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 195px;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-between;
+  width: 145px;
+}
+
+.eye {
+  position: relative;
+  width: 30px;
+  height: 90px;
+  background: #664608;
+  border-radius: 100%;
+}
+
+.smile {
+  width: 100px;
+  height: 60px;
+  background: #664608;
+  border-radius: 7% 7% 100% 100%;
+}
