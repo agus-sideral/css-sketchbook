@@ -1,0 +1,43 @@
+/* base css */
+
+body {
+  background: #E1E1E1;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* cat css */
+
+.head {
+  height: 350px;
+  width: 350px;
+  background-color:  #FEECBE ;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ears {
+  height: 94px;
+  width: 310px;
+  /* background-color:  black; */
+  margin-bottom: -100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ear {
+  height: 94px;
+  width: 150px;
+  background-color: #FEECBE;
+}
