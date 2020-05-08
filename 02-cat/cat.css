@@ -12,13 +12,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
 /* cat css */
 
 .head {
   height: 350px;
-  width: 350px;
+  width: 410px;
   background-color:  #FEECBE ;
   border-radius: 100%;
   display: flex;
@@ -27,8 +28,8 @@ body {
 }
 
 .ears {
-  height: 94px;
-  width: 310px;
+  height: 170px;
+  width: 320px;
   /* background-color:  black; */
   margin-bottom: -100px;
   display: flex;
@@ -37,7 +38,9 @@ body {
 }
 
 .ear {
-  height: 94px;
-  width: 150px;
-  background-color: #FEECBE;
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 150px solid #FEECBE;
 }
