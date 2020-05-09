@@ -1,5 +1,6 @@
 /* base css */
 
+
 body {
   background: #E1E1E1;
 }
@@ -12,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 /* cat css */
@@ -20,7 +21,7 @@ body {
 .head {
   height: 350px;
   width: 410px;
-  background-color:  #FEECBE ;
+  background-color:  #FDDC88 ;
   border-radius: 100%;
   display: flex;
   flex-direction: column;
@@ -42,5 +43,23 @@ body {
   height: 0;
   border-left: 80px solid transparent;
   border-right: 80px solid transparent;
-  border-bottom: 150px solid #FEECBE;
+  border-bottom: 150px solid #FDDC88;
+}
+
+.face {
+  height: 100%;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 70px
+}
+
+.eye {
+  background-color: #000000;
+  width: 40px;
+  height: 120px;
+  border-radius: 50%;
 }
