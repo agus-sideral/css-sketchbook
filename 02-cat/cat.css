@@ -63,3 +63,53 @@ body {
   height: 120px;
   border-radius: 50%;
 }
+
+.snout {
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nose {
+  width: 50px;
+  height: 30px;
+  background-color: pink;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+}
+
+.mouth-container {
+  display: flex;
+  height: 0px;
+}
+
+.mouth {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  border-radius: 0 0 90px 90px;
+  border: black solid 8px;
+  border-top: 0;
+  background-color: transparent;
+}
+
+.mouth-line {
+  height: 20px;
+  width: 10px;
+  background-color: black;
+}
+
+.mouth-left {
+  position: relative;
+  left: 3px
+}
+
+.mouth-right {
+  position: relative;
+  right: 3px
+}
+
