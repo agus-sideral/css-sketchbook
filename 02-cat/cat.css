@@ -2,7 +2,7 @@
 
 
 body {
-  background: #E1E1E1;
+  background: #9D8D8D;
 }
 
 .container {
@@ -31,7 +31,6 @@ body {
 .ears {
   height: 170px;
   width: 320px;
-  /* background-color:  black; */
   margin-bottom: -100px;
   display: flex;
   flex-direction: row;
