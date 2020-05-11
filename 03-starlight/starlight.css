@@ -8,6 +8,10 @@
 
 .main-figure {}
 
+.big-star {
+    display: flex;
+}
+
 .star-fragment {
     width: 300px;
     height: 300px;
@@ -20,10 +24,18 @@
     height: 300px;
 }
 
-.upper-fragment-bg {
+.top-left-fragment-bg {
     border-bottom-right-radius: 300px;
 }
 
-.lower-fragment-bg {
+.bottom-left-fragment-bg {
     border-top-right-radius: 300px;
+}
+
+.top-right-fragment-bg {
+    border-bottom-left-radius: 300px;
+}
+
+.bottom-right-fragment-bg {
+    border-top-left-radius: 300px;
 }
