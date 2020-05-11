@@ -1,0 +1,29 @@
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.main-figure {}
+
+.star-fragment {
+    width: 300px;
+    height: 300px;
+    background-color:#efe899;
+}
+
+.star-fragment-background {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+}
+
+.upper-fragment-bg {
+    border-bottom-right-radius: 300px;
+}
+
+.lower-fragment-bg {
+    border-top-right-radius: 300px;
+}
