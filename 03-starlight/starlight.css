@@ -3,9 +3,9 @@
     --star-color: #efe899;
     --background-color: #333237;
     --big-star-size: 300px;
-    --star-top-width: 10px;
-    --star-top-base-width: 180px;
-    --star-center-width: calc(var(--star-top-width) * 2);
+    --star-tip-width: 10px;
+    --star-tip-base-width: 180px;
+    --star-center-width: calc(var(--star-tip-width) * 2);
 }
 
 body {
@@ -25,13 +25,25 @@ body {
     align-items: center
 }
 
-.star-top {
+/* star top */
+
+.star-tip {
     width: 0;
     height: 0;
-    border-left: var(--star-top-width) solid transparent;
-    border-right: var(--star-top-width) solid transparent;
-    border-bottom: var(--star-top-base-width) solid var(--star-color);
+    border-left: var(--star-tip-width) solid transparent;
+    border-right: var(--star-tip-width) solid transparent;
+    border-bottom: var(--star-tip-base-width) solid var(--star-color);
 }
+
+.bottom {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* star body  */
 
 .star-body {
     display: flex;
