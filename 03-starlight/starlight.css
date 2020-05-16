@@ -2,10 +2,12 @@
 :root {
     --star-color: #efe899;
     --background-color: #333237;
-    --big-star-size: 300px;
-    --star-tip-width: 10px;
-    --star-tip-base-width: 180px;
+    --big-star-size: 150px;
+    --star-tip-width: 5px;
+    --star-tip-base-width: 90px;
+    --star-tip-small-base-width: 65px;
     --star-center-width: calc(var(--star-tip-width) * 2);
+    --small-tip-position: 26px;
 }
 
 body {
@@ -30,9 +32,18 @@ body {
 .star-tip {
     width: 0;
     height: 0;
+}
+
+.big-tip {
     border-left: var(--star-tip-width) solid transparent;
     border-right: var(--star-tip-width) solid transparent;
     border-bottom: var(--star-tip-base-width) solid var(--star-color);
+}
+
+.small-tip {
+    border-left: var(--star-tip-width) solid transparent;
+    border-right: var(--star-tip-width) solid transparent;
+    border-bottom: var(--star-tip-small-base-width) solid var(--star-color);
 }
 
 .bottom {
@@ -43,15 +54,41 @@ body {
     transform: rotate(180deg);
 }
 
+.left {
+    -webkit-transform:rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position:relative;
+    right:var(--small-tip-position);
+}
+
+.right {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position:relative;
+    right:calc(0px - var(--small-tip-position));
+}
+
 /* star body  */
 
 .star-body {
     display: flex;
+    align-items: center;
 }
 
 .star-center-vertical {
     padding-right: var(--star-center-width);
     background-color:var(--star-color);
+}
+
+.star-center-horizontal {
+    padding-bottom: var(--star-center-width);
+    background-color: var(--star-color);
 }
 
 .star-fragment {
