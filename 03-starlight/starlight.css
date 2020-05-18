@@ -5,7 +5,7 @@
     --big-star-size: 150px;
     --star-tip-width: 5px;
     --star-tip-base-width: 90px;
-    --star-tip-small-base-width: 65px;
+    --star-tip-small-base-width: 64px;
     --star-center-width: calc(var(--star-tip-width) * 2);
     --small-tip-position: 26px;
 }
@@ -20,6 +20,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+/* big star  */
 
 .big-star {
     display: flex;
@@ -118,3 +120,17 @@ body {
 .bottom-right-fragment-bg {
     border-top-left-radius: var(--big-star-size);
 }
+ 
+/* small star  */
+
+.small-star {
+    position: relative;
+    left: 320px;
+    bottom: 150px; 
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+/* small star wip wip. Maybe re-organizing the classes as 
+...-bg and ...-sm (for bis star and small star) will help :thinking: */
