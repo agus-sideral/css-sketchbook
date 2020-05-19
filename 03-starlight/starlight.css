@@ -35,17 +35,15 @@ body {
 .star-tip {
     width: 0;
     height: 0;
+    border-left: var(--star-tip-width) solid transparent;
+    border-right: var(--star-tip-width) solid transparent;
 }
 
 .big-tip {
-    border-left: var(--star-tip-width) solid transparent;
-    border-right: var(--star-tip-width) solid transparent;
     border-bottom: var(--star-tip-base-width) solid var(--star-color);
 }
 
 .small-tip {
-    border-left: var(--star-tip-width) solid transparent;
-    border-right: var(--star-tip-width) solid transparent;
     border-bottom: var(--star-tip-small-base-width) solid var(--star-color);
 }
 
