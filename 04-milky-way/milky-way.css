@@ -9,4 +9,11 @@ body {
     transform: translate(-50%, -50%);
   }
 
+.sky {
+  width: 300px;
+  height: 300px;
+  border-radius: 12%;
+  background-color: #553788;
+}
+
   
