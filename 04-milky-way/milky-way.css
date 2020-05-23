@@ -29,12 +29,15 @@ body {
   display: flex;
 }
 
+.gravity {
+  position: absolute;
+  bottom: 0;
+}
+
 .mountain-base {
   background-color: var(--mountain-color);
   height: 54px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+  width: 100%; 
   border-bottom-left-radius: 36px;
   border-bottom-right-radius: 36px;
 }
@@ -48,7 +51,7 @@ body {
 
 .peak-1 {
   width: 27px;
-  height: 100%;
+  height: 7px;
   background-color: var(--mountain-color);
 }
 
