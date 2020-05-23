@@ -1,3 +1,7 @@
+:root{
+  --mountain-color: #292f33;
+}
+
 body {
     background: #141212;
   }
@@ -12,8 +16,40 @@ body {
 .sky {
   width: 300px;
   height: 300px;
-  border-radius: 12%;
+  border-radius: 36px;
   background-color: #553788;
+}
+
+.mountain-chain {
+  /* background-color: #292f33; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 89px;
+  display: flex;
+}
+
+.mountain-base {
+  background-color: var(--mountain-color);
+  height: 54px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+}
+
+.mountain-peaks {
+  height: 35px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.peak-1 {
+  width: 27px;
+  height: 100%;
+  background-color: var(--mountain-color);
 }
 
   
