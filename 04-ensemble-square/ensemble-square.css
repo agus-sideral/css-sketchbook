@@ -8,14 +8,20 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .square {
+  width: 70px;
+  height: 70px;
+  background-color: #008EC1;
+}
+
+.square-border {
   width: 50px;
   height: 50px;
-  background-color: #008EC1;
+  border: 10px solid #008EC1;
 }
 
 .rotate {
