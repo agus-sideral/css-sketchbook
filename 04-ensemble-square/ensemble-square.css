@@ -17,7 +17,7 @@ body {
   height: 120px;
   background-color: #008EC1;
   animation:
-  slide 1.3s linear infinite alternate;
+  slide 4s linear infinite normal;
 
 }
 
@@ -37,14 +37,22 @@ body {
 
 @keyframes slide {
   0% {
-    transform: translate(0, 0) rotate(45deg);
+    transform: translate(0, 0) rotate(-45deg);
   }
 
-  50% {
-    /* transform: rotate(360deg) */
+  30% {
+    transform: translate(120px, 0) rotate(-45deg)
+  }
+
+  31% {
+    transform: translate(120px, 0) rotate(360deg)
+  }
+
+  70% {
+    transform: translate(120px, 0) rotate(-45deg)
   }
 
   100% {
-    transform: translate(120px, 0) rotate(45deg);
+    transform: translate(0px, 0) rotate(-45deg);
   }
 }
