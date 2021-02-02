@@ -45,7 +45,7 @@ body {
   }
 
   40% {
-    transform: translate(120px, 0) rotate(135deg)
+    transform: translate(120px, 0) rotate(135deg) scale(.3)
   }
 
   70% {
