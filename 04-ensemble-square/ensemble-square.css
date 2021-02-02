@@ -17,7 +17,7 @@ body {
   height: 120px;
   background-color: #008EC1;
   animation:
-  slide 4s linear infinite normal;
+  slide 2s linear infinite normal;
 
 }
 
@@ -25,31 +25,48 @@ body {
   width: 90px;
   height: 90px;
   border: 15px solid #008EC1;
-}
-
-.rotate {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  animation:
+  border-slide 2s linear infinite normal;
 }
 
 @keyframes slide {
+  /* initial position */
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  /* movement towards the center */
+  30% {
+    transform: translate(60px, 0) rotate(45deg)
+  }
+  /* rotation and scale */
+  40% {
+    transform: translate(60px, 0) rotate(135deg) scale(.8)
+  }
+  /* stays in position */
+  50% {
+    transform: translate(60px, 0) rotate(135deg)
+  }
+  /* moves towards the initial position */
+  100% {
+    transform: translate(0px, 0) rotate(135deg);
+  }
+}
+
+@keyframes border-slide {
   0% {
     transform: translate(0, 0) rotate(45deg);
   }
 
   30% {
-    transform: translate(120px, 0) rotate(45deg)
+    transform: translate(-60px, 0) rotate(45deg)
   }
 
   40% {
-    transform: translate(120px, 0) rotate(135deg) scale(.3)
+    transform: translate(-60px, 0) rotate(135deg) scale(.8)
   }
 
-  70% {
-    transform: translate(120px, 0) rotate(135deg)
+  50% {
+    transform: translate(-60px, 0) rotate(135deg)
   }
 
   100% {
