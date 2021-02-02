@@ -13,15 +13,18 @@ body {
 }
 
 .square {
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   background-color: #008EC1;
+  animation:
+  slide 5s linear infinite alternate;
+  animation-duration: 1.3s;
 }
 
 .square-border {
-  width: 50px;
-  height: 50px;
-  border: 10px solid #008EC1;
+  width: 90px;
+  height: 90px;
+  border: 15px solid #008EC1;
 }
 
 .rotate {
@@ -30,4 +33,13 @@ body {
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  50%, 100% {
+    transform: translate(120px, 0) rotate(45deg);
+  }
 }
