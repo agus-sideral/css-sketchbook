@@ -1,0 +1,93 @@
+body {
+  background: #FFE508;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  background-color: #10C8FF;
+  z-index: 100;
+  animation:
+  slide 1s linear infinite normal;
+
+}
+
+.square-border {
+  width: 90px;
+  height: 90px;
+  border: 15px solid #6BD9FF;
+  animation:
+  border-slide 1s linear infinite normal;
+}
+
+@keyframes slide {
+  /* initial position */
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  /* movement towards the center */
+  33% {
+    transform: translate(60px, 0) rotate(45deg)
+  }
+  /* rotation */
+  45% {
+    transform: translate(60px, 0) rotate(135deg)
+  }
+  /* stays in position */
+  50% {
+    transform: translate(60px, 0) rotate(135deg)
+  }
+  /* scale */
+  55% {
+    transform: translate(60px, 0) rotate(135deg) scale(.8)
+  }
+  /* stays in position */
+  66% {
+    transform: translate(60px, 0) rotate(135deg)
+  }
+  /* moves towards the initial position */
+  100% {
+    transform: translate(0px, 0) rotate(135deg);
+  }
+}
+
+@keyframes border-slide {
+  /* initial position */
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  /* movement towards the center */
+  33% {
+    transform: translate(-60px, 0) rotate(45deg)
+  }
+  /* rotation */
+  45% {
+    transform: translate(-60px, 0) rotate(135deg)
+  }
+  /* stays in position */
+  50% {
+    transform: translate(-60px, 0) rotate(135deg)
+  }
+  /* scale */
+  55% {
+    transform: translate(-60px, 0) rotate(135deg) scale(.8)
+  }
+  /* stays in position */
+  66% {
+    transform: translate(-60px, 0) rotate(135deg)
+  }
+  /* moves towards the initial position */
+  100% {
+    transform: translate(0px, 0) rotate(135deg);
+  }
+}
