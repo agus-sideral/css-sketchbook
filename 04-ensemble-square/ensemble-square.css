@@ -37,22 +37,22 @@ body {
 
 @keyframes slide {
   0% {
-    transform: translate(0, 0) rotate(-45deg);
+    transform: translate(0, 0) rotate(45deg);
   }
 
   30% {
-    transform: translate(120px, 0) rotate(-45deg)
+    transform: translate(120px, 0) rotate(45deg)
   }
 
-  31% {
-    transform: translate(120px, 0) rotate(360deg)
+  40% {
+    transform: translate(120px, 0) rotate(135deg)
   }
 
   70% {
-    transform: translate(120px, 0) rotate(-45deg)
+    transform: translate(120px, 0) rotate(135deg)
   }
 
   100% {
-    transform: translate(0px, 0) rotate(-45deg);
+    transform: translate(0px, 0) rotate(135deg);
   }
 }
