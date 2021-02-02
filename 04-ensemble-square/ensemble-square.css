@@ -17,7 +17,7 @@ body {
   height: 120px;
   background-color: #008EC1;
   animation:
-  slide 2s linear infinite normal;
+  slide 1s linear infinite normal;
 
 }
 
@@ -26,7 +26,7 @@ body {
   height: 90px;
   border: 15px solid #008EC1;
   animation:
-  border-slide 2s linear infinite normal;
+  border-slide 1s linear infinite normal;
 }
 
 @keyframes slide {
@@ -35,15 +35,23 @@ body {
     transform: translate(0, 0) rotate(45deg);
   }
   /* movement towards the center */
-  30% {
+  33% {
     transform: translate(60px, 0) rotate(45deg)
   }
-  /* rotation and scale */
-  40% {
-    transform: translate(60px, 0) rotate(135deg) scale(.8)
+  /* rotation */
+  45% {
+    transform: translate(60px, 0) rotate(135deg)
   }
   /* stays in position */
   50% {
+    transform: translate(60px, 0) rotate(135deg)
+  }
+  /* scale */
+  55% {
+    transform: translate(60px, 0) rotate(135deg) scale(.8)
+  }
+  /* stays in position */
+  66% {
     transform: translate(60px, 0) rotate(135deg)
   }
   /* moves towards the initial position */
@@ -53,22 +61,31 @@ body {
 }
 
 @keyframes border-slide {
+  /* initial position */
   0% {
     transform: translate(0, 0) rotate(45deg);
   }
-
-  30% {
+  /* movement towards the center */
+  33% {
     transform: translate(-60px, 0) rotate(45deg)
   }
-
-  40% {
-    transform: translate(-60px, 0) rotate(135deg) scale(.8)
+  /* rotation */
+  45% {
+    transform: translate(-60px, 0) rotate(135deg)
   }
-
+  /* stays in position */
   50% {
     transform: translate(-60px, 0) rotate(135deg)
   }
-
+  /* scale */
+  55% {
+    transform: translate(-60px, 0) rotate(135deg) scale(.8)
+  }
+  /* stays in position */
+  66% {
+    transform: translate(-60px, 0) rotate(135deg)
+  }
+  /* moves towards the initial position */
   100% {
     transform: translate(0px, 0) rotate(135deg);
   }
