@@ -1,5 +1,5 @@
 body {
-  background: #FED550;
+  background: #FFE508;
 }
 
 .container {
@@ -15,7 +15,8 @@ body {
 .square {
   width: 120px;
   height: 120px;
-  background-color: #008EC1;
+  background-color: #10C8FF;
+  z-index: 100;
   animation:
   slide 1s linear infinite normal;
 
@@ -24,7 +25,7 @@ body {
 .square-border {
   width: 90px;
   height: 90px;
-  border: 15px solid #008EC1;
+  border: 15px solid #6BD9FF;
   animation:
   border-slide 1s linear infinite normal;
 }
